@@ -188,6 +188,67 @@ body{
     font-weight: 700;
 	margin-top: 15px;
 }
+         /* card style */
+.card-section{
+	text-align: center;
+	margin-top: 100px;
+}
+.card-container{
+	max-width: 1400px;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	align-items: normal;
+	margin-top: 30px;
+}
+.card{
+	
+}
+.card img{
+	width: 100%;
+}
+/* play instantly section style */
+
+.linear-text{
+	font-size: 3rem;
+    font-weight: 700;
+}
+.play-instantly-section{
+	margin-top: 80px;
+}
+.play-instantly-container{
+	max-width: 1400px;
+	margin: 0px auto;
+	display: flex;
+	gap: 50px;
+}
+.play-instantly-text{
+	width: 50%;
+	text-align: right;
+	padding: 110px 40px;
+}
+.play-instantly-img{
+	border: 2px soid blue;
+	width: 50%;
+}
+.play-instantly-img img{
+	width: 100%;
+}
+.play-instantly-main-img{
+	margin-left: 6rem;
+}
+.play-instantly-main-img img{
+	width: 100%;
+}
+.play-instantly-secnd-img{
+	max-width: 14.5rem;
+	position: relative;
+	bottom: 15rem;
+}
+
+
+
 
 
 
@@ -196,7 +257,7 @@ body{
 /* Media Query */
 
 @media screen and (max-width: 576px) {
-	header{
+	body{
 		margin: 0px 30px;
 	}
 	.nav-container,
@@ -206,8 +267,10 @@ body{
 	}
 	.menu-container ul{
 		flex-direction: column;
+		padding: 0px;
 	}
-	.banner-container{
+	.banner-container,
+	.play-instantly-container{
 		flex-direction: column-reverse;
 		margin-top: 50px;
 	}
@@ -218,21 +281,33 @@ body{
 		flex-direction: row;
 		justify-content: center;
 	}
-	.we-are-gamer-description{
-		text-align: center;
+	.card-container{
+		grid-template-columns: 1fr;
 	}
+	.we-are-gamer-description,
+	.play-instantly-text{
+		text-align: center;
+		padding: 0px;
+	}
+	.play-instantly-secnd-img {
+	    max-width: 10rem;
+	    position: relative;
+	    bottom: 9rem;
+    }
 	.menu-container,
 	.logo-container,
 	.banner-img,
 	.banner-text,
 	.we-are-gamer-img,
-	.we-are-gamer-description{
+	.we-are-gamer-description,
+	.play-instantly-img,
+	.play-instantly-text{
 		width: 100%;
 	}
 }
 
 @media screen and (min-width: 577px) and (max-width: 990px) {
-	header{
+	body{
 		margin: 0px 50px;
 	}
 	.nav-container,
@@ -245,22 +320,37 @@ body{
 		justify-content: center;
 	}
 	.menu-container ul{
-	
+		padding: 0px;
 	    justify-content: center
 	}
 	.banner-container{
 		flex-direction: column-reverse;
 		margin-top: 420px;
 	}
-	.we-are-gamer-description{
-		text-align: center;
+	.play-instantly-container{
+		flex-direction: column-reverse;
 	}
+	.card-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.we-are-gamer-description,
+	.play-instantly-text{
+		text-align: center;
+		padding: 0px;
+	}
+	.play-instantly-secnd-img {
+	    max-width: 18rem;
+	    position: relative;
+	    bottom: 18rem;
+    }
 	.menu-container,
 	.logo-container,
 	.banner-img,
 	.banner-text,
 	.we-are-gamer-img,
-	.we-are-gamer-description{
+	.we-are-gamer-description,
+	.play-instantly-img,
+	.play-instantly-text{
 		width: 100%;
 	}
 }
