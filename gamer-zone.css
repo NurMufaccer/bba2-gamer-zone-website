@@ -250,6 +250,7 @@ body{
 /* game srection */
 .game-section{
 	margin-top: 30px;
+	margin-bottom: 100px;
 
 }
 .game-container{
@@ -276,6 +277,67 @@ body{
     font-size: 1.25rem;
     font-weight: 600;
 	text-align: center;
+}
+/* footer style */
+footer{
+	background-color: #0B0223;
+	border: 5px solid red;
+}
+.footer{
+	text-align: center;
+	border: 3px solid yellow;
+	max-width: 1400px;
+	margin: 100px auto;
+}
+.footer-text-color{
+	color: #FFF;
+}
+.footer-logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+    font-weight: 700;
+}
+.footer-logo img{
+	width: 85px;
+	object-fit: cover;
+	margin-right: 20px;
+}
+.footer-logo .gamer1{
+	color: #FF42A5;
+}
+.footer-menu ul{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+.footer-menu ul li{
+	list-style: none;
+}
+.footer-menu ul li a{
+	text-decoration: none;
+	font-size: 1rem;
+    font-weight: 600;
+}
+.social-sites ul{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 70px;
+}
+.policy ul{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+.policy ul li{
+	list-style: none;
+}
+.policy ul li a{
+	text-decoration: none;
+}
+.footer-text{
+	
 }
 
 
