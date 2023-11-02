@@ -247,7 +247,36 @@ body{
 	bottom: 15rem;
 }
 
+/* game srection */
+.game-section{
+	margin-top: 30px;
 
+}
+.game-container{
+	max-width: 1400px;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+	align-items: baseline;
+	gap: 35px;
+}
+.game{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+	
+}
+.game img{
+	width: 60px;
+}
+.game-title{
+	color: #0B0223;
+    font-size: 1.25rem;
+    font-weight: 600;
+	text-align: center;
+}
 
 
 
@@ -261,7 +290,8 @@ body{
 		margin: 0px 30px;
 	}
 	.nav-container,
-	.we-are-gamer-container{
+	.we-are-gamer-container,
+	.play-instantly-container{
 		flex-direction: column;
 		padding: 0px 0px;
 	}
@@ -270,7 +300,7 @@ body{
 		padding: 0px;
 	}
 	.banner-container,
-	.play-instantly-container{
+	{
 		flex-direction: column-reverse;
 		margin-top: 50px;
 	}
@@ -284,6 +314,10 @@ body{
 	.card-container{
 		grid-template-columns: 1fr;
 	}
+    .game-container{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 	.we-are-gamer-description,
 	.play-instantly-text{
 		text-align: center;
@@ -311,7 +345,8 @@ body{
 		margin: 0px 50px;
 	}
 	.nav-container,
-	.we-are-gamer-container{
+	.we-are-gamer-container,
+	.play-instantly-container{
 		flex-direction: column;
 		padding: 0px 0px;
 	}
@@ -327,11 +362,11 @@ body{
 		flex-direction: column-reverse;
 		margin-top: 420px;
 	}
-	.play-instantly-container{
-		flex-direction: column-reverse;
-	}
 	.card-container{
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.game-container{
+		grid-template-columns: repeat(3, 1fr);
 	}
 	.we-are-gamer-description,
 	.play-instantly-text{
